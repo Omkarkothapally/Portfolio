@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <header>
+            <nav>
+                <img class="logo" src="images/omkar.png">`
+                 <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </header>
+        <main>
+            <section class="firstsection">
+                <div class="left">
+                    Hi,My name is Omkar Kothapally
+                    <div>and I am a Frontend Developer</div>
+                </div>
+                <div class="right">
+                    <img src="images/developer1.jpeg">
+                </div>
+            </section>
+        </div>
+        <div id="about">
+            <section class="secondsection">
+                <div class="leftsecondsection">
+                    <img src="images/developer.jpeg">
+                </div>
+                <div class="rightsecondsection">
+                    <h1>ABOUT ME</h1>
+                    <div>Hi, I'm Omkar Kothapally. I'm a 20-year-old third year Information Technology student at Anurag University in Hyderabad.I am passionate about front-end development and have a strong foundation in HTML, CSS, and JavaScript. I am also proficient in a front-end frameworks, that is React</div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Html , Css , BootStrap , JavaScript , React Js </li>
+                            <li><span>Database</span><br>MYSQL</li>
+                            <li><span>Other skills</span><br>Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Anurag University,Hyderabad</span><br>B tech_Information Technology(7.08 CGPA) </li>
+                            <li><span>Govt Polytechnic,Nalgonda</span><br>Dipolma_Civil(8.6 CGPA)</li>
+                            <li><span>Bachpan(AHPS),Bhongir</span><br>CBSE(7.3 CGPA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="projects">
+            <section>
+                <div class="thirdsection">
+                <div class="leftthird">
+                    <h2>News Api</h2>
+                    <div>Developed a React.js frontend for a News API, displaying real-time articles from various sources. Integrated
+                        RESTful endpoints and optimized data fetching with caching. Enhanced user experience with responsive design
+                        and intuitive interface.</div>
+                </div>
+                <div class="right">
+                    <img src="images/newsapi.png">
+                </div>
+            </div>
+            <div class="thirdsection">
+                <div class="leftthird">
+                    <h1>Plant Disese Detection</h1>
+                    <div>Utilized image processing techniques and deep learning algorithms to analyze images of plant leaves and accurately identify various diseses such as leaf spots,blights and molds.
+                        </div>
+                </div>
+                <div class="right">
+                    <img src="images/plant.jfif">
+                </div>
+            </div>
+        </div>
+            </section>
+            <div id="contact">
+            <section class="fourthsection">
+                <div class="resume">
+                    <h1 class="title1">Download My Resume Here:</h1>
+                    <a href="images/Omkar_Resume.pdf" class="btn" download >Download CV <i class="fas fa-download"></i></a>
+                </div>
+                    <h1>CONTACT ME AT</h1>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/omkar_kothapally_/?hl=en"><i class="fab fa-instagram"></i></a>   
+                    </div>
+                    <div class="details2">
+                    <a class="details1" href="https://mail.google.com"><i class="far fa-envelope"></i><span class="mail">omkarkothapally123@gmail.com</span></a>
+                    <br>
+                </div>
+                    <a class="details1" href=""><i class="fas fa-phone-alt"></i><span class="mail">+91 93474 XXXXX</span></a>
+                
+            </div>
+            </section>
+        </div>
+        </main>
+
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>

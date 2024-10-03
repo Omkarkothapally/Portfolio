@@ -1,0 +1,173 @@
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    height: 80px;
+    position:sticky;
+    top: 0;   
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    padding-left:30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-right: 30px;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+.firstsection{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.right{
+    width: 40%;
+}
+.right img{
+    width: 80%;
+}
+.left{
+    font-size: 39px;
+    width: 50%;
+}
+.secondsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 200px 20px;
+}
+.leftsecondsection{
+    width: 35%;
+}
+.leftsecondsection img{
+    width: 100%;
+}
+.rightsecondsection{
+    font-size: 20px;
+    width: 60%;
+}
+.tab-titles{
+    display: flex;
+    margin:0;
+    padding-bottom: 0;
+}
+.tab-links{
+    margin-right:50px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height:3px;
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
+    background-color: #ff004f;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    padding-top: 0;
+    margin: 10px -40px;
+}
+.tab-contents ul li span{
+    color: #e72562;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.fourthsection{
+    text-align: center;
+    margin:120px 50px;
+}
+.mail{
+    margin:20px 0;
+    font-size: large;
+    padding:20px 10px;
+}
+.details1{
+    margin: 220px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.details2{
+    margin: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.resume{
+    margin-bottom: 150px;
+}
+
+.title1{
+    margin-bottom: 30px;
+}
+.leftthird{
+    font-size: 25px;
+    width: 50%;
+}
+.thirdsection{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:660px){
+    nav .fas{  
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        cursor: pointer;
+    }
+}
