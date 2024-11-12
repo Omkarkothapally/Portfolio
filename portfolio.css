@@ -1,12 +1,18 @@
-
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+html, body {
+    overflow-x: hidden;
+}
 nav{
     display: flex;
     align-items:center;
     justify-content:space-between;
     flex-wrap: wrap;
     height: 80px;
-    position:sticky;
-    top: 0;   
+    position:fixed;
+    top: 5px;   
 }
 .logo{
     width: 150px;
@@ -32,6 +38,10 @@ nav ul li a:hover{
     margin: 50px 0;
 }
 .right{
+    width: 40%;
+    margin-top:20px;
+}
+.right1{
     width: 40%;
 }
 .right img{
@@ -141,33 +151,28 @@ html{
     align-items: center;
     margin: 50px 0;
 }
+.leftthird1{
+    font-size: 25px;
+    width: 50%;
+    margin-top: 0px;
+}
+.thirdsection1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 25px 20px;
+}
 nav .fas{
     display: none;
 }
-@media only screen and (max-width:660px){
-    nav .fas{  
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 50px;
-        cursor: pointer;
-    }
+#contact{
+    margin-top: 30px;
 }
+.section {
+        page-break-before: always; 
+    }
+    
+    section {
+        height: 100vh;
+        overflow: hidden;
+    }
